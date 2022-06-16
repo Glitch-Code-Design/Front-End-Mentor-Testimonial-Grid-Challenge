@@ -6,8 +6,9 @@
 }
 
 :root {
-    --bg-light: #ffffff;
+    --bg-light: #ebeceb;
     --bg-dark: #212121;
+    --card-bg: #fff;
     --violet: #7541c8;
     --blue-grey: #48556a;
     --dark-blue: #19212e;
@@ -24,6 +25,17 @@ body {
     max-width: 1440px;
     margin: 100px auto;
     padding: 20px;
+}
+
+.container .card {
+    padding: 50px;
+    border-radius: 15px;
+    background: var(--card-bg);
+}
+
+.container header {
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (prefers-color-scheme: dark) {
