@@ -7,7 +7,9 @@
 
 :root {
     --bg-light: #ebeceb;
-    --card-bg: #fff;
+    --bg-dark: #141414;
+    --card-bg-light: #fff;
+    --card-bg-dark: #dbdbdb;
     --card-border: #996ed9;
     --violet: hsl(263, 55%, 52%);
     --blue-grey: hsl(217, 19%, 35%);
@@ -49,7 +51,7 @@ body {
 .main .card {
     padding: 50px;
     border-radius: 15px;
-    background: var(--card-bg);
+    background: var(--card-bg-light);
 }
 
 .main .violet-card {
@@ -153,5 +155,17 @@ footer a:visited {
     }
     footer {
         font-size: .85rem;
+    }
+}
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background: var(--bg-dark);
+    }
+    .main .card:nth-of-type(3),
+    .main .card:nth-of-type(5) {
+        background: var(--card-bg-dark);
+    }
+    footer {
+        color: var(--font);
     }
 }
